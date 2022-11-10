@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="LWS 6">
+        <div class="slds-m-around_medium">
+        <lightning-input type="checkbox" label="Show Details" onclick={handleChange}></lightning-input>
+        <br/>
+
+        <temple if:true={areDetailsVisible}>
+            <h1>Hello</h1>
+            <p>These are the details</p>
+        </temple>
+
+       </div>
+    </lightning-card>
+</template>
