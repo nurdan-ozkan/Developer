@@ -8,9 +8,10 @@ System.enqueueJob(new QueueableExample());
 MySchedule myClass = new MySchedule();
 System.schedule('My Schedule Apex', '0 0 12 * * ?', myClass );
 
-System.schedule('My Second Schedule Apex','0 0 13 * * ?', new MySchedule());
+System.schedule('My Second Schedule Apex Today','0 0 13 * * ?', new MySchedule());
 
 // Batch Apex 
 Database.executeBatch(new batchAccountUpdate());
+
 
 Database.executeBatch(UpdateContactDescription());
